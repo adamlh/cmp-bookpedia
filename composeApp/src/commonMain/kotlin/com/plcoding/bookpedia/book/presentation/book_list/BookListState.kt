@@ -2,13 +2,34 @@ package com.plcoding.bookpedia.book.presentation.book_list
 import com.plcoding.bookpedia.book.domain.Book
 import com.plcoding.bookpedia.core.presentation.UiText
 
+
+
+
 // MVI Model view intent
 // Intent is the actions the user can do from user interation to send to the view model.
 data class BookListState (
-    val searchQuery: String = "Metagrappler",
-    val searchResults: List<Book> = emptyList(),
+    val searchQuery: String = "",
+    val searchResults: List<Book> = books,
     val favouriteBooks: List<Book> = emptyList(),
     val isLoading: Boolean = false,
     val selectedTabIndex: Int = 0,
     val errorMessage: UiText? = null,
 )
+
+
+val books = (1..100).map {
+    Book(
+        id = it.toString(),
+        title = "Book $it",
+        imageUrl = "https://test.com",
+        authors = listOf("Adam Hughes"),
+        description = "Description $it",
+        languages = emptyList(),
+        firstPublisherYear = null,
+        averageRating = 4.67854,
+        ratingCount = 5,
+        numPages = 100,
+        numEditions = 3
+
+    )
+}
