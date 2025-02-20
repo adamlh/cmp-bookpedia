@@ -94,8 +94,8 @@ android {
         applicationId = "com.plcoding.bookpedia"
         minSdk = libs.versions.android.minSdk.get().toInt()
         targetSdk = libs.versions.android.targetSdk.get().toInt()
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "1.10"
     }
     packaging {
         resources {
@@ -111,10 +111,13 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+
+
 }
 
 dependencies {
     debugImplementation(compose.uiTooling)
+
 }
 
 compose.desktop {
@@ -128,3 +131,5 @@ compose.desktop {
         }
     }
 }
+
+

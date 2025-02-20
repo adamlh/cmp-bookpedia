@@ -1,9 +1,9 @@
 [versions]
-agp = "8.5.2"
+agp = "8.6.0"
 android-compileSdk = "35"
 android-minSdk = "24"
 android-targetSdk = "35"
-androidx-activityCompose = "1.9.3"
+androidx-activityCompose = "1.10.0"
 androidx-appcompat = "1.7.0"
 androidx-constraintlayout = "2.2.0"
 androidx-core-ktx = "1.15.0"
@@ -21,8 +21,10 @@ koin = "4.0.0"
 ktor = "3.0.0"
 coil3 = "3.0.0-rc02"
 ksp = "2.0.20-1.0.24"
-sqlite = "2.5.0-alpha11"
-room = "2.7.0-alpha11"
+sqlite = "2.5.0-beta01"
+room = "2.7.0-beta01"
+
+
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
